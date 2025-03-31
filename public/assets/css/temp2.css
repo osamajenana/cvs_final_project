@@ -1,0 +1,9 @@
+
+.template .container {
+    width: 70%;
+    min-height: 1000px;
+    background-color: aqua;
+    margin: 0 auto;
+    
+}
+

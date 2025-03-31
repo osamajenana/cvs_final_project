@@ -1,0 +1,203 @@
+
+.resume-options {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 65px;
+
+}
+
+a.card.highlight {
+    text-decoration: none;
+}
+
+.resume-option {
+    background: #fff;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.resume-option.active {
+    border-color: #007bff;
+    box-shadow: 0 4px 16px rgba(0, 123, 255, 0.2);
+}
+
+.resume-option .icon-container {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f9fc;
+    border-radius: 50%;
+}
+
+.resume-option .icon-container img {
+    width: 40px;
+    height: 40px;
+}
+
+.resume-option h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.resume-option p {
+    font-size: 14px;
+    color: #666;
+}
+
+.resume-option:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Jumbotron Section Styling */
+.jumbotronTemplates {
+    background: linear-gradient(to right, #e6eef7, #1e73be);
+    color: #ffffff;
+    padding: 150px 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 0px 0;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.jumbotronTemplates .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.jumbotronTemplates h1 {
+    font-size: 2.8rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    color: #10237e;
+}
+
+.jumbotronTemplatesSubtitle {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.jumbotronTemplatesButton {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #091655;
+    background-color: #3498db;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.jumbotronTemplatesButton:hover {
+    background-color: #144e82;
+    transform: translateY(-3px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .jumbotronTemplates h1 {
+        font-size: 2rem;
+    }
+
+    .jumbotronTemplatesSubtitle {
+        font-size: 1rem;
+    }
+
+    .jumbotronTemplatesButton {
+        font-size: 1rem;
+        padding: 12px 25px;
+    }
+}
+
+a.button.button--big.button--blue.jumbotronTemplatesButton {
+    font-size: 20px;
+}
+
+
+/* Benefits Section Styling */
+.benefitsTemplates {
+    padding: 125px 20px;
+    background-color: #f9fafe;
+    text-align: center;
+}
+
+.benefitsTemplates h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #3498db;
+    margin-bottom: 40px;
+}
+
+.benefitsTemplatesWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.benefitsTemplatesItem {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 350px;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.benefitsTemplatesItem:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.benefitsTemplatesItem svg {
+    margin-bottom: 20px;
+}
+
+.benefitsTemplatesItemContent h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #091655;
+}
+
+.benefitsTemplatesItemContent p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.benefitsTemplatesButton {
+    display: inline-block;
+    margin-top: 40px;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #3498db;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.benefitsTemplatesButton:hover {
+    background-color: #144e82;
+    transform: translateY(-3px);
+    border-radius: 30px;
+}
+
+a.button.button--medium.button--blue.benefitsTemplatesButton {
+    font-size: larger;
+}

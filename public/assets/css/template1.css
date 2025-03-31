@@ -1,0 +1,307 @@
+.navbar {
+  box-shadow: 0px 5px 10px 0px #2980b9;
+  position: fixed;
+  width: 100%;
+  background: #fff;
+  color: #4a4646;
+  opacity: 0.85;
+  height: 65px;
+  z-index: 12;
+  font-family: 'Poppins' sans-serif;
+  margin-top: -46px;
+}
+
+
+
+
+.btn-box{
+  display:flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.customBtn {
+  background-color: hsl(0deg 83.42% 43.88%);
+  color: #fff;
+  margin: 0 auto;
+  outline: none;
+  border: none;
+  font-size: 28px;
+}
+
+.between {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+span.text {
+  color: #837e7e;
+}
+
+.template {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding-top: 80px;
+  
+}
+
+.template .container {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  min-height: 1000px;
+  background: #fff;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  transform: scale(1);
+  transform-origin: top left;
+  
+}
+
+
+.container .left-side {
+  position: relative;
+  background: #e6e6e6;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 767px) {
+  .left-side {
+    gap: 20px;
+  }
+}
+
+.profileTxt {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.profileTxt .imgBox {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 992px) {
+  .profileTxt .imgBox {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.profileTxt .imgBox img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.info {
+  text-transform: capitalize;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.info .title {
+  font-size: 1.5em;
+  padding: 10px 0;
+  background-color: #222;
+  color: #fff;
+  border-radius: 10px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+@media (max-width: 992px) {
+  .info .title {
+    font-size: 0.7em;
+    word-wrap: nowrap;
+  }
+}
+
+.info ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 20px;
+  text-align: justify;
+}
+
+.contact ul li {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  
+}
+
+.education ul li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+.info ul li span {
+  color: #222;
+  font-weight: 400;
+  font-family: Arial, sans-serif;
+}
+
+.info ul li span i {
+  font-size: small;
+}
+
+.container .right-side {
+  position: relative;
+  background: #fff;
+  padding: 40px;
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 992px) {
+  .right-side {
+    padding: 20px;
+  }
+}
+
+.personal-info {
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  text-transform: capitalize;
+  text-align: left;
+  margin: 50px 0;
+}
+
+.personal-info h1 {
+  font-size: 54px;
+  font-weight: bold;
+  width: fit-content;
+}
+
+.personal-info h1 span {
+  font-size: 54px;
+  display: block;
+  color: #222;
+  letter-spacing: 2px;
+}
+
+.personal-info h6 {
+  font-size: 24px;
+  display: block;
+  color: #222;
+  letter-spacing: 2px;
+  font-weight: 100;
+}
+
+@media (max-width: 992px) {
+  .personal-info {
+    height: auto;
+  }
+
+  .personal-info h1 {
+    font-size: 54px !important;
+  }
+
+  .personal-info h1 span {
+    font-size: 54px !important;
+  }
+
+  .personal-info h6 {
+    font-size: 22px;
+  }
+  .work .title,
+.references .title {
+  font-size: 10px;
+}
+}
+
+.work .title,
+.references .title {
+  position: relative;
+  overflow: hidden;
+  text-transform: uppercase;
+  
+}
+
+.work .title::after,
+.references .title::after {
+  content: "";
+  display: inline-block;
+  height: 1px;
+  width: 100%;
+  background-color: #222;
+  position: absolute;
+  top: 50%;
+}
+
+.work .job {
+  margin-top: 50px;
+}
+
+.references {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.ref-detail {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.ref-detail .box {
+  width: calc(50% - 20px);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+@media (max-width: 768px) {
+  .ref-detail {
+    flex-direction: column;
+  }
+
+  .ref-detail .box {
+    width: 100%;
+  }
+  h1{
+    font-size: 12px;
+  }
+  span {
+    font-size: 14px;
+  }
+  .between h3 , .between span , p, li , li span{ 
+    font-size : 10px;
+}
+}
+
+
+@media (max-width: 767px) {
+  .template  .container{
+   transform: scale(0.7);
+  }
+}
